@@ -197,18 +197,37 @@ body {
   right: 5%;
   width: 40%;
   text-align: center; }
+  @media only screen and (max-width: 68.12em) {
+    .brand {
+      width: 50%; } }
   @media only screen and (max-width: 31.87em) {
     .brand {
       top: 10%;
       width: 60%; } }
+  @media only screen and (max-width: 28.12em) {
+    .brand {
+      top: 20%;
+      width: 90%; } }
   .brand__heading {
     display: inline-block;
     font-size: 3.5rem;
     border-top: solid 2px black;
     border-bottom: solid 2px black; }
+    @media only screen and (max-width: 68.12em) {
+      .brand__heading {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 68.12em) {
+      .brand__heading {
+        font-size: 2.8rem; } }
   .brand__content {
     background-color: white;
     box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.65); }
+    @media only screen and (max-width: 68.12em) {
+      .brand__content {
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 28.12em) {
+      .brand__content {
+        font-size: 1.3rem; } }
 
 .joker {
   background-color: #7aaa0c;
@@ -220,12 +239,19 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 28.12em) {
+    .joker {
+      right: 0;
+      width: 100%; } }
   .joker__lady {
     height: 25rem;
     align-self: flex-end; }
   .joker__heading {
     margin: 0;
     font-size: 3.8rem; }
+    @media only screen and (max-width: 28.12em) {
+      .joker__heading {
+        font-size: 2.8rem; } }
   .joker__content {
     padding: 1rem 0;
     line-height: 1.5;
@@ -233,6 +259,9 @@ body {
     margin-bottom: 2rem;
     border-bottom: 2px solid white;
     width: 36rem; }
+    @media only screen and (max-width: 28.12em) {
+      .joker__content {
+        padding: 1rem; } }
 
 .service {
   width: 40rem;
@@ -256,8 +285,14 @@ body {
       width: 30rem; } }
   .service__photo {
     height: 20rem; }
+    @media only screen and (max-width: 28.12em) {
+      .service__photo {
+        height: 10rem; } }
   .service__heading {
     font-size: 3rem; }
+    @media only screen and (max-width: 28.12em) {
+      .service__heading {
+        font-size: 2rem; } }
   .service__rocket {
     position: absolute;
     height: 15rem;
@@ -273,6 +308,9 @@ body {
   width: 40rem;
   top: 25%;
   right: 5%; }
+  @media only screen and (max-width: 28.12em) {
+    .media__content {
+      margin-left: 1.2rem; } }
   @media only screen and (max-width: 56.25em) {
     .media {
       right: 2%; } }
@@ -280,6 +318,10 @@ body {
     .media {
       right: 3%;
       width: 35rem; } }
+  @media only screen and (max-width: 28.12em) {
+    .media {
+      right: 0;
+      width: 100%; } }
   .media__horns {
     margin-bottom: 3rem; }
   .media__horn--1 {
@@ -291,6 +333,9 @@ body {
     @media only screen and (max-width: 59.37em) {
       .media__horn--1 {
         height: 12rem; } }
+    @media only screen and (max-width: 28.12em) {
+      .media__horn--1 {
+        height: 10rem; } }
   .media__horn--2 {
     -webkit-animation: horn_2 0.8s infinite;
     animation: horn_2 0.8s infinite; }
@@ -300,6 +345,9 @@ body {
     @media only screen and (max-width: 59.37em) {
       .media__horn--2 {
         height: 12rem; } }
+    @media only screen and (max-width: 28.12em) {
+      .media__horn--2 {
+        height: 10rem; } }
 
 .carousel {
   margin-top: 5rem; }
@@ -336,6 +384,9 @@ body {
     .brand__crown {
       height: 5rem;
       top: 5%; } }
+  @media only screen and (max-width: 28.12em) {
+    .brand__crown {
+      height: 4rem; } }
 
 .brand__specs {
   position: absolute;
@@ -352,13 +403,11 @@ body {
 .clients {
   background-color: gainsboro;
   margin-top: 5.5rem;
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  /*display: flex;
-  justify-content: center;
-  flex-wrap: wrap;*/ }
+  transform: translate(-50%, -50%); }
   @media only screen and (max-width: 73.75em) {
     .clients {
       margin-top: 5rem; } }
@@ -447,6 +496,9 @@ body {
     padding: 5rem;
     letter-spacing: 2px;
     position: relative; }
+    @media only screen and (max-width: 28.12em) {
+      .footer__content {
+        flex-direction: column; } }
     .footer__content--1 {
       font-size: 2rem;
       font-weight: 600; }
@@ -458,6 +510,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .footer__logo {
         height: 15rem; } }
+    @media only screen and (max-width: 28.12em) {
+      .footer__logo {
+        margin-bottom: 1.5rem; } }
   .footer__brain {
     height: 15rem;
     position: absolute;
@@ -478,6 +533,12 @@ body {
   background-size: cover;
   background-position: top;
   overflow-y: hidden; }
+  @media only screen and (max-width: 68.12em) {
+    .header {
+      height: 80vh; } }
+  @media only screen and (max-width: 28.12em) {
+    .header {
+      height: 90vh; } }
   .header__brain {
     position: absolute;
     top: 50%;
@@ -505,20 +566,24 @@ body {
       .header__heading {
         display: block;
         width: 100%; } }
+    @media only screen and (max-width: 28.12em) {
+      .header__heading {
+        margin-left: 0.5rem; } }
     .header__heading--span1 {
       font-size: 2.5rem; }
       @media only screen and (max-width: 31.87em) {
         .header__heading--span1 {
           font-size: 1.8rem; } }
-    @media only screen and (max-width: 28.12em) {
-      .header__heading--span2 {
-        visibility: hidden; } }
+    .header__heading--span2 {
+      transform: rotate(20deg) translateY(3.5rem); }
+      @media only screen and (max-width: 28.12em) {
+        .header__heading--span2 {
+          visibility: hidden; } }
     .header__heading--span2, .header__heading--span3 {
       color: red;
       display: inline-block;
       font-size: 3.5rem;
-      margin: 0 -2rem;
-      transform: rotate(20deg) translateY(3.5rem); }
+      margin: 0 -2rem; }
       @media only screen and (max-width: 31.87em) {
         .header__heading--span2, .header__heading--span3 {
           font-size: 2.8rem;
@@ -534,7 +599,7 @@ body {
         .header__heading--span3 {
           font-size: 1.5rem;
           transform: rotate(0deg) translate(0);
-          margin: 0 -3rem; } }
+          margin: 0 0; } }
 
 .row {
   max-width: 114rem;
@@ -591,6 +656,10 @@ body {
         width: 6rem;
         top: 2.5rem;
         right: 2.5rem; } }
+    @media only screen and (max-width: 28.12em) {
+      .navigation__button {
+        right: 3rem;
+        top: 3rem; } }
   .navigation__background {
     display: inline-block;
     height: 6rem;
@@ -608,6 +677,10 @@ body {
         width: 5rem;
         top: 3rem;
         right: 3rem; } }
+    @media only screen and (max-width: 28.12em) {
+      .navigation__background {
+        right: 3.5rem;
+        top: 3.5rem; } }
   .navigation__nav {
     height: 100vh;
     width: 100%;
@@ -690,7 +763,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 11rem 7rem; } }
-  @media only screen and (max-width: 43.75em) {
+  @media only screen and (max-width: 53.12em) {
     .section-about {
       padding: 10rem 6rem; } }
   @media only screen and (max-width: 43.75em) {
@@ -706,6 +779,9 @@ body {
       .section-about .about__links-box {
         opacity: 0;
         visibility: hidden; } }
+    @media only screen and (max-width: 68.12em) {
+      .section-about .about__links-box {
+        left: 15%; } }
     .section-about .about__links-box::after {
       content: "";
       display: table;
@@ -734,10 +810,13 @@ body {
     @media only screen and (max-width: 56.25em) {
       .section-about .bulb {
         left: 3%; } }
+    @media only screen and (max-width: 68.12em) {
+      .section-about .bulb {
+        top: 10%; } }
     @media only screen and (max-width: 43.75em) {
       .section-about .bulb {
         top: 5%;
-        left: 50%;
+        left: 15%;
         transform: translate(-50%, 0%); } }
   .section-about .brain {
     position: absolute;
@@ -759,12 +838,11 @@ body {
     @media only screen and (max-width: 59.37em) {
       .section-about .logo {
         top: 5%;
-        left: 10%;
+        right: 10%;
         height: 15rem;
         transform: rotate(0deg); } }
     @media only screen and (max-width: 37.5em) {
       .section-about .logo {
-        left: 5%;
         height: 12rem; } }
     @media only screen and (max-width: 28.12em) {
       .section-about .logo {
@@ -781,6 +859,12 @@ body {
   @media only screen and (max-width: 81.25em) {
     .section-brand {
       padding: 8rem; } }
+  @media only screen and (max-width: 68.12em) {
+    .section-brand {
+      height: 65vh; } }
+  @media only screen and (max-width: 28.12em) {
+    .section-brand {
+      height: 75vh; } }
 
 .section-jokers {
   height: auto;
@@ -800,6 +884,12 @@ body {
   @media only screen and (max-width: 28.12em) {
     .section-jokers {
       padding: 4rem 2rem; } }
+  @media only screen and (max-width: 68.12em) {
+    .section-jokers {
+      height: 65vh; } }
+  @media only screen and (max-width: 28.12em) {
+    .section-jokers {
+      height: 75vh; } }
 
 .section-services {
   height: auto;
@@ -820,6 +910,12 @@ body {
   @media only screen and (max-width: 28.12em) {
     .section-services {
       padding: 4rem 2rem; } }
+  @media only screen and (max-width: 68.12em) {
+    .section-services {
+      height: 65vh; } }
+  @media only screen and (max-width: 28.12em) {
+    .section-services {
+      height: 75vh; } }
 
 .section-media {
   height: auto;
@@ -840,6 +936,12 @@ body {
   @media only screen and (max-width: 28.12em) {
     .section-media {
       padding: 4rem 2rem; } }
+  @media only screen and (max-width: 68.12em) {
+    .section-media {
+      height: 65vh; } }
+  @media only screen and (max-width: 28.12em) {
+    .section-media {
+      height: 75vh; } }
 
 .section-newspaper {
   height: auto;
@@ -1326,6 +1428,13 @@ body {
   background-color: #add945;
   text-align: center;
   position: relative; }
+  @media only screen and (max-width: 28.12em) {
+    .section-brands h2 {
+      margin-top: 1.5rem; } }
   @media only screen and (max-width: 59.37em) {
     .section-brands {
       padding: 7rem 3rem; } }
+  @media only screen and (max-width: 28.12em) {
+    .section-brands {
+      padding: 4rem 0;
+      height: 80vh; } }
